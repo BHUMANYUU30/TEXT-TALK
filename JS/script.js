@@ -128,7 +128,7 @@ downloadBtn.addEventListener("click", (e) => {
     const blob = new Blob([outputText], { type: "pdf/plain" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.download = `text-talk-translated.txt`;
+    a.download = `text-talk-translated.pdf`;
     a.href = url;
     a.click();
   }
