@@ -125,7 +125,7 @@ downloadBtn.addEventListener("click", (e) => {
   const outputLanguage =
     outputLanguageDropdown.querySelector(".selected").dataset.value;
   if (outputText) {
-    const blob = new Blob([outputText], { type: "pdf/plain" });
+    const blob = new Blob([outputText], { type: "text/pdf" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.download = `text-talk-translated.pdf`;
